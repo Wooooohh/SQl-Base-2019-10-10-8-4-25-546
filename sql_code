@@ -1,0 +1,20 @@
+ create table stu(
+    id number(8),
+    name varchar2(32 BYTE) not null,
+    age number(2) default 0,
+    sex varchar2(32 BYTE)
+   ）;
+  
+   create table subject(
+   id number（8），
+    subject varchar2(32 BYTE) not null,
+    teacher varchar2(32 BYTE) not null,
+    description varchar2(64 BYTE) not null
+    );
+  
+   create table score(
+    id number(8),
+    student_id number(8),
+    subject_id number(8),
+    score number(4)
+    );
